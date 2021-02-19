@@ -20,7 +20,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/1.11/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'x7mrf1c^+0v5ig@#xatwx3rprvk3p#oy^m-ol$*$k1-lj+!@^j'
+SECRET_KEY = ''
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
@@ -28,7 +28,7 @@ DEBUG = False
 if DEBUG:
     ALLOWED_HOSTS = ['*']
 else:
-    ALLOWED_HOSTS = ['95.179.180.237', 'localhost', 'smm-metall.ru', 'www.smm-metall.ru']
+    ALLOWED_HOSTS = ['localhost', 'smm-metall.ru', 'www.smm-metall.ru']
 
 
 # Application definition
@@ -96,9 +96,9 @@ DATABASES = {
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'dbforproject',
-        'USER': 'projectdbuser',
-        'PASSWORD': 'bronnica2013',
+        'NAME': '',
+        'USER': '',
+        'PASSWORD': '',
         'HOST': 'localhost',
         'PORT': '',
         }
@@ -170,8 +170,8 @@ MEDIA_URL = '/media/'
 
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_HOST_USER = 'callback.smm@gmail.com'
-EMAIL_HOST_PASSWORD = 'bronnica2013'
-EMAIL_PORT = 587
+EMAIL_HOST_PASSWORD = ''
+EMAIL_PORT = 
 EMAIL_USE_TLS = True
 EMAIL_USE_SSL = False
 
